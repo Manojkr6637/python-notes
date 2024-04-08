@@ -1,1 +1,538 @@
 
+Naina:::
+-Programming languages
+#Indentation refers to the spaces at the beginning of a code line.
+ -Python uses indentation to indicate a block of code.
+ -The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+ -You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+#Python Variables
+In Python, variables are created when you assign a value to it:
+Python has no command for declaring a variable.
+ x= 2;
+ y= 3;
+#Comments
+Python has commenting capability for the purpose of in-code documentation.
+Comments start with a #, and Python will render the rest of the line as a comment:
+#this is a comment.
+Comments can be used to explain Python code.
+Comments can be used to make the code more readable.
+Comments can be used to prevent execution when testing code.
+
+Comments starts with a #, and Python will ignore them:
+print("Hello, World!") #This is a comment
+Multiple Comments:
+Since Python will ignore string literals that are not assigned to a variable,
+ you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
+As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.
+===Variables=========
+
+Variables are containers for storing data values.
+
+python->dynamically typed language
+creating Variables
+Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+
+naming convenstion:
+age_to_calcul
+
+print("ddd{22}")
+print(f"dddd{2222*3}")
+
+python reserved keyword:
+False	None	True	and	as	assert	async	await
+break	class	continue	def	del	elif	else	except
+finally	for	from	global	if	import	in	is
+lambda	nonlocal	not	or	pass	raise	return	try
+while	with	yield
+
+
+#functions:
+A function is defined using the def keyword.
+a block of code which only runs when it is called.
+def no_of_days(days):
+  print(f"ddd{days}")
+  print(f"ddd{20}")
+  
+no_of_days(20)
+
+#Scope:
+A varible is only available from inside the region it is created
+-global scope=varibles available from within any scope
+
+
+#build in function
+ are provided by python language itself.
+ 
+ 
+input("Hey, user enter a no of days\n")
+
+input() always return a string
+
+#cast
+int()
+str()
+
+user_input=input('Hi, enter a number of days and I');
+user_input_number = int(user_input)
+
+if user_input_number.isdigit():
+print(user_input_number)
+#validate user input
+
+ We want to avoid or handle vaues
+  -which does'nt make sense
+  -that could crash our programmer
+  -could even be a security risk
+  
+#if else condition
+
+if 
+elif
+else
+type()->type checking
+
+================error handling========
+try or catch
+
+try:
+
+except valueerro:
+    print("eerr")
+===================Looping=========
+python has 2 loop commands	
+while
+
+for:
+for i in users:
+
+
+===========data type=======
+-To store multiple items in a single variable
+- A list can contain different data types
+
+for no_of_el in user_input.split():
+  value
+ String-Split()
+ 10 22 50 ->[10, 22, 50]
+ default seperator is any whitespace
+  10, 20, 'sttt'->split(', ')
+
+Basic list operations
+  -create a list-> access items of the list
+  - add an item to the list
+  - remove an item from the list
+  - change items in the list
+  
+==================set============
+create a set
+- access items inly via loop
+- add an item to the set
+- remove an item from the set
+
+users  = {12, 20,30}->only unque values
+users.remove(12)
+
+ Note: unordered and unchnageable
+  X items in a set do not have a defined order
+  X items can not be refered to by index
+  X items can not be changed, only added / removed
+ 
+==============set or list========
+addd = [] 
+
+
+Accessing items in a list
+  - items can be accessed by index
+  - the first item has index 0
+  -
+  
+ ===============Build in functions==========
+ print('sdff')
+ input('sdfs')->user input
+ set([1, 2, 3])
+ int('20')->take integer
+ "2, 3".split()
+ [1, 2, 3].count()
+ 
+ 
+ =============Dictionary data type=========
+  -are used to store values in key:value pairs
+  - is a collection, which does not allow duplicate values
+ my_dictionary  = {
+ "days": 20,
+ "unit": "hours"
+ }
+ 
+ items can be accessed by its key name;
+ my_dictionary["days"] or my_dictionary.get("days")
+ =========== Modules===
+  is just a .py file
+  - Logically organize your python code
+  -Module should contain related code
+  
+  create a module & import statement
+  
+  helper.py
+    def user(a):
+	   return a
+  
+  main.py
+  import helper
+  helper.user(20)
+  
+  1. import helper->import entire file with variable
+     helper.user()
+	 
+  2. from helper import *->import entire file
+        no need to write helper
+ 		user(10)
+  3. from helper  import user, variable	
+  
+  
+  
+  ======Built in modules=========
+  
+  You can use many existing python modules
+  
+  import math
+  
+  math.pow(2, 4)
+  math.sqrt(16)
+  from datetime import datetime, timezone
+  now = datetime.now();
+  datetime.datetime(2018, 10, 7, 12)
+  obj.datetimezone(timezone.utc)
+  
+  Datetime module provides you with many different functions that
+  make it easier for you to work with dates and times.
+  import os->modules
+  import logging->modules
+  logger = logging.getLogger('Main')
+  logger.error('Error happed in the app!')
+  
+  ===========Projects======
+  datetime.datetime.strptime(deadline, "%d.%m.%Y")
+  
+  ==============build in vs third-party====
+  
+  -python comes only with a set of built in modules
+  -Many more modules out there, which are not part of the python installation
+  
+     pandas, pytorch, plotly, numpy etc
+  - you need to install these third party packages
+  build in modules and packages are most common ones.
+  
+  
+  
+  web development ->django
+  
+  pypi
+	 
+	 
+	============ module and packages=====
+	
+	module->any python file is a module->contain functions or variables
+	packages-> collection of python modules
+	 pakcage must include an __init__.py file
+	 This __init__ file distinguishes a package from a directory
+	   
+	
+	===============pypi=========
+	the python package index-> is a reposttory for third party python packages.
+	
+	people can publish their pakcages to this repository.
+	
+	So it becomes available for everyone to use
+	
+	A large community means, many people are creating useful modules and 
+	make them availble for others. 
+	
+	over 290,000 python packages 
+	
+	
+	===============pip==========
+	pip is a packege manager for python
+	node modiels->js
+	java ->maven
+	
+	pip is a package manager for python
+	-used to install pakcages from the python
+	packageindex, but also other indexs
+	
+	pip is included in the python installation.
+	
+	===========Automation with python===================
+	
+	different ways to work with files
+	
+	-python has several built-in functions for handling files in general
+	io module->create, read, write
+	
+	python package to work with spreadsheet specially
+	
+	
+	openpyxl
+	
+	module = .py file
+	package = collection of modules,
+	             must contain init.py file
+				 
+	library = collection of packages
+	
+	import openpyxl
+	
+	inv_file = openpyxl.load_workbook('inventory.xlsx')
+	product_list = inv_file('sheet1')
+	products_per_supper ={}
+	print(products_per_supper)
+	for pr in range(2, product_list.max_row+1):
+	   suname = product_list.cell(pr, 4)
+	   
+	   
+	   
+	   dn
+	
+	===========Class & objects============
+	class is like an object constructor
+	class User:
+	       name
+		   email
+		   password
+		   job
+		  def change_password():
+		    #anme
+		   def change_job():
+		      do smith
+	 -all classes have a __init__() function
+	 -__init__() is excuted automatically,
+	 whenever we create the objects from this class.
+	 
+	 
+	 -'self'parameter
+	 -self is a reference to the current instance of the class
+	 -is used to access variables that belong to the class.
+	 
+	 
+	 class User:
+	    def __init__(self, user_name, name, password, current_job_title):
+		     self.email= user_email
+			 self.name = name
+			 self.password = password
+			 self.current_job_title = current_job_title
+		def change_password(self, new_password):
+		# do setting
+		  self.password = new_password
+		
+		def change_job_title():
+		// do selth
+		
+		
+		User('dd@gai.com', 'dd')
+		
+Python is an object oriented programming languages.
+Almost everything in python is an object.
+-str(), init(), ... are the constructor functions
+
+
+#API requests with Python
+Python->gitlab
+http request or http response
+
+
+pip install requests:
+import requests
+
+res = requests.get('api')
+res.text
+res.json()
+
+print(f"ddd :{dd['name']}")
+
+==================Python with mosh==========
+print('*'*10)
+******
+
+print('Hi'+20)
+
+
+data = 'Hello'
+print(data[0])//H
+print(data[-1])//o
+
+data[0:3]//Hel
+data[0:]//Hello
+data[1:]//ello
+another = data[:]// copy
+print(data[:5])//0-5
+print[3:]// 3 to end
+==================len==============
+s="Hello hi"
+print(len(s))
+print(s.find('H'))//0
+s.replace('p','h')
+
+'hi' in s
+
+
+course = 'python for beginnners'
+
+len()
+course.upper()
+course.lower()
+course.title()
+course.find()
+course.replace()
+'...' in course
+
+
+=======Arithmetic operations===============
+10.123
+10/3->3.999
+10//3->3
+10**3->1000
+============== operator predecedence
+
+=======logical operationrs===========
+if is+hot and not has_not
+==========while loops======
+command = ""
+ command.lower()
+ command.upper()
+ 
+ for x in range(4):
+    print(x)
+	
+	
+eg. for x in range(4)
+     for y in range(3)
+	   print(f'({x},{y})')
+eg.  numbers = [5, 2, 5, 2,2,2]
+for x_count in numbers:
+   output = ''
+   for count in range(x_count):
+      output +='X'
+
+
+==========Lists==============
+
+ names = ['dd','drr']
+ 
+ 2d-lists
+ 
+ matrix = [
+ [1, 2, 3],
+ [4, 5, 6],
+ [7, 8, 9]
+ ]
+ 
+ matrix[0][1]
+ 
+ 
+ numbers = [5, 3, 2,1]
+ numbers.insert(0, 10)// numbers.remove(5)
+ .clear()
+ number.pop()
+ 
+ numbers.index(50)
+ print( 50 in numbers)
+ print(numbers.count(5))//2
+ numbers.sort();
+ print(numbers)
+ 
+ numbers2 =numbers.copy()
+ numbers.append(10)
+ 
+ 
+ ==================tuples=============
+ nums = (1, 2,3)
+ 
+ ============unpacking=========
+ coordinates = (1, 2,3)
+ x = coordinates[0]
+ y = coordinates[1]
+ z = coordinates[2]
+ 
+ lists = [1, 2, 3]
+ x,y, z = coordinates// unpacking
+ 
+ a, b, c =lists
+ ==========distionaaris=======
+ customers = {
+    "name": "Jonh",
+	 "age": 30,
+	 "is_verfied": True
+ }
+ 
+ 
+ print(customers["name"])
+ customers.get(name)
+ 
+ 
+ =========functions=========
+ def greet_user(name, name2):
+     
+	 
+	 greet_user(first='hell', '')
+	 
+	 // first ='hello'// keyword argument
+	    ''// posistion argument
+=======================input======
+try:
+ age = int(input('age: '))
+ print(age)		
+except ValueError:
+  print('Invalid Error')
+  
+  ===================Classes============
+  class Points:
+     def move(self):
+	   print('Move')
+	 def draw(self):
+	   print('draw')
+
+point1 = Points();
+point1.x =10
+point1.y =20
+print(point1.y)
+
+class Person:
+   def __init__(self, x, y):
+        self.x =x
+		self.y =y
+		
+   def talk(self):
+        print(f"Hi, I am {self.name}")
+per = Person(10, 20)
+
+==============inheritance in python============
+class Mammal:
+  def walk(self):
+     print("walk")
+	 
+class Dog(Mammal):
+   pass
+
+
+class Cat(Mammal):
+   def talk(self):
+      print("Hello")
+	  
+	  
+cat = Cat();
+cat.walk()
+=====================Modules================
+import random;
+numbers = ["A", "B", "C"]
+random.choice(numbers)
+
+==============packages=========
+
+
